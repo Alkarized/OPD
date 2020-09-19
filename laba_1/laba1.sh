@@ -2,6 +2,8 @@
 #1 задание------------------------------------------------
 chmod -R -f 777 lab0
 rm -r -f lab0
+#Удалил ранее созданную папку lab0 с ее содержимым
+
 mkdir lab0
 cd /home/s311707/lab0
 touch geodude3 growlithe1 huntail1
@@ -15,8 +17,7 @@ mkdir empoleon
 cd /home/s311707/lab0
 mkdir nincada0
 cd nincada0
-cat "" > cleafairy 2> /dev/null 
-#выводит ошибку, но создает файл
+cat "" > cleafairy 2> /dev/null
 cat cleafairy > graveler 
 cat graveler > altaria
 mkdir salamence
@@ -110,7 +111,11 @@ chmod u-w ledian7
 #---------------------------------------------------------
 
 #4 задание------------------------------------------------
-#wc -m ledian7/panpour nincada0/cleafairy nincada0/graveler nincada0/altaria | sort 2> /dev/null
-#ls -lRtr | grep "*r" |tail -n 3 2>&1
+(wc -m ledian7/panpour nincada0/cleafairy nincada0/graveler nincada0/altaria | sort) 2> /dev/null
+(ls -lRu | grep "r$" | tail -3) 2>&1
+#33333 
+(ls -lR ledian7 | sort -rk5) 2> /dev/null
+(ls -lR | grep -v "^./" | grep -v "/s[a-z]*" | grep "s[a-s]" | head -n 3 | sort -k5) 2>&1
+(ls -lRur | head -n 6 | tail -4) 2> /dev/null
 #---------------------------------------------------------
 
