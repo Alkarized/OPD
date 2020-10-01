@@ -32,8 +32,7 @@ cp geodude3 scyther7/snivy
 
 echo "Живет Cave Mountain" > geodude3
 
-echo "Тип диеты\n
-      Carnivore" > growlithe1
+echo "Тип диеты\nCarnivore" > growlithe1
 
 echo "Способности Bite Screech Water Pulse Scary Face" > huntail1
 echo "Ice Fang Brine Baton Pass Dive Crunch Aqua Tail Hydro" >> huntail1
@@ -46,18 +45,15 @@ echo "Ходы Bug Bite Fury" > ledian7/shedinja
 echo "Cutter Giga Drain Mud-Slap Natural Gift Ominous Wind Sleep Talk Snore" >> ledian7/shedinja
 echo "Spite String Shot Sucker Punch Swift Trick" >> ledian7/shedinja
 
-echo "Тип покемона\n
-	  WATER NONE" > ledian7/panpour
+echo "Тип покемона\nWATER NONE" > ledian7/panpour
 
-echo "Развитые способности Friend\n
-      Guard" > nincada0/cleafairy
+echo "Развитые способности Friend\nGuard" > nincada0/cleafairy
 
 echo "Способности Mud Sport Rock Polish Rock Throw" > nincada0/graveler
 echo "Magnitude Rollout Rock Blast Smack Down Selfdestruct Bulldoze Stealth" >> nincada0/graveler
 echo "Rock Earthquake Explosin Double-Edge Stone Edge" >> nincada0/graveler
 
-echo "satk=7\n
-      sdef=11 spd=8" > nincada0/altaria
+echo "satk=7\nsdef=11 spd=8" > nincada0/altaria
 
 echo "Способности Overgrow Chlorophyll Rivalry" > scyther7/snivy
 #Записал в файлы их содержимое
@@ -89,7 +85,6 @@ chmod 512 scyther7/igglybuff
 chmod u+w scyther7/zoroark
 chmod u+r scyther7/snivy
 chmod u+w scyther7/igglybuff
-chmod u+r ledian7/snivy
 chmod u+w ledian7
 #Поставил права, чтобы можно было копировать файлы
 
@@ -105,7 +100,6 @@ ln -s huntail1 ledian7/panpourhuntail
 chmod u-w scyther7/zoroark
 chmod u-r scyther7/snivy
 chmod u-w scyther7/igglybuff
-chmod u-r ledian7/snivy
 chmod u-w ledian7
 #Вернул права обратно
 #---------------------------------------------------------
@@ -113,9 +107,11 @@ chmod u-w ledian7
 #4 задание------------------------------------------------
 (wc -m ledian7/panpour nincada0/cleafairy nincada0/graveler nincada0/altaria | sort) 2> /dev/null
 (ls -lRu | grep "r$" | tail -3) 2>&1
-#33333 
+#33333 (find ~ -name "*y" -exec cat -n '{}' ';' | sort -k2) 2> /dev/null
+(cat -n */*y */*/*/*y | sort -k2) 2> /dev/null
 (ls -lR ledian7 | sort -rk5) 2> /dev/null
-(ls -lR | grep -v "^./" | grep -v "/s[a-z]*" | grep "s[a-s]" | head -n 3 | sort -k5) 2>&1
+(ls -lR | grep -v "^\./" | grep -v "/s[a-z]*" | grep "s[a-s]" | head -n 3 | sort -k5) 2>&1
+ls -R | grep "^s" | head  -n 3 | sort -n  
 (ls -lRur | head -n 6 | tail -4) 2> /dev/null
 #---------------------------------------------------------
 
