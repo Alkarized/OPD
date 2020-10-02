@@ -85,6 +85,7 @@ chmod 512 scyther7/igglybuff
 chmod u+w scyther7/zoroark
 chmod u+r scyther7/snivy
 chmod u+w scyther7/igglybuff
+chmod u+r ledian7/snivy
 chmod u+w ledian7
 #Поставил права, чтобы можно было копировать файлы
 
@@ -100,6 +101,7 @@ ln -s huntail1 ledian7/panpourhuntail
 chmod u-w scyther7/zoroark
 chmod u-r scyther7/snivy
 chmod u-w scyther7/igglybuff
+chmod u-r ledian7/snivy
 chmod u-w ledian7
 #Вернул права обратно
 #---------------------------------------------------------
@@ -109,9 +111,8 @@ chmod u-w ledian7
 (ls -lRu | grep "r$" | tail -3) 2>&1
 #33333 (find ~ -name "*y" -exec cat -n '{}' ';' | sort -k2) 2> /dev/null
 (cat -n */*y */*/*/*y | sort -k2) 2> /dev/null
-(ls -lR ledian7 | sort -rk5) 2> /dev/null
+(ls -lR ledian7 | grep -v "total" | grep -v "ledian7" |sort -rk5) 2> /dev/null
 (ls -lR | grep -v "^\./" | grep -v "/s[a-z]*" | grep "s[a-s]" | head -n 3 | sort -k5) 2>&1
-ls -R | grep "^s" | head  -n 3 | sort -n  
 (ls -lRur | head -n 6 | tail -4) 2> /dev/null
 #---------------------------------------------------------
 
