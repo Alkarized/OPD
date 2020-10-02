@@ -32,7 +32,9 @@ cp geodude3 scyther7/snivy
 
 echo "Живет Cave Mountain" > geodude3
 
-echo "Тип диеты\nCarnivore" > growlithe1
+echo "Тип диеты" > growlithe1
+echo "Carnivore" >> growlithe1
+
 
 echo "Способности Bite Screech Water Pulse Scary Face" > huntail1
 echo "Ice Fang Brine Baton Pass Dive Crunch Aqua Tail Hydro" >> huntail1
@@ -45,15 +47,18 @@ echo "Ходы Bug Bite Fury" > ledian7/shedinja
 echo "Cutter Giga Drain Mud-Slap Natural Gift Ominous Wind Sleep Talk Snore" >> ledian7/shedinja
 echo "Spite String Shot Sucker Punch Swift Trick" >> ledian7/shedinja
 
-echo "Тип покемона\nWATER NONE" > ledian7/panpour
+echo "Тип покемона" > ledian7/panpour
+echo "WATER NONE" >> ledian7/panpour
 
-echo "Развитые способности Friend\nGuard" > nincada0/clefairy
+echo "Развитые способности Friend" > nincada0/clefairy
+echo "Guard" >> nincada0/clefairy
 
 echo "Способности Mud Sport Rock Polish Rock Throw" > nincada0/graveler
 echo "Magnitude Rollout Rock Blast Smack Down Selfdestruct Bulldoze Stealth" >> nincada0/graveler
 echo "Rock Earthquake Explosin Double-Edge Stone Edge" >> nincada0/graveler
 
-echo "satk=7\nsdef=11 spd=8" > nincada0/altaria
+echo "satk=7" > nincada0/altaria
+echo "sdef=11 spd=8" >> nincada0/altaria
 
 echo "Способности Overgrow Chlorophyll Rivalry" > scyther7/snivy
 #Записал в файлы их содержимое
