@@ -17,8 +17,8 @@ mkdir empoleon
 cd /home/s311707/lab0
 mkdir nincada0
 cd nincada0
-cat "" > cleafairy 2> /dev/null
-cat cleafairy > graveler 
+cat "" > clefairy 2> /dev/null
+cat clefairy > graveler 
 cat graveler > altaria
 mkdir salamence
 cd /home/s311707/lab0
@@ -47,7 +47,7 @@ echo "Spite String Shot Sucker Punch Swift Trick" >> ledian7/shedinja
 
 echo "Тип покемона\nWATER NONE" > ledian7/panpour
 
-echo "Развитые способности Friend\nGuard" > nincada0/cleafairy
+echo "Развитые способности Friend\nGuard" > nincada0/clefairy
 
 echo "Способности Mud Sport Rock Polish Rock Throw" > nincada0/graveler
 echo "Magnitude Rollout Rock Blast Smack Down Selfdestruct Bulldoze Stealth" >> nincada0/graveler
@@ -69,8 +69,8 @@ chmod 404 ledian7/shedinja
 chmod a=r-- ledian7/panpour
 chmod go-x,g+w ledian7/empoleon
 chmod go=--- nincada0
-chmod o-r nincada0/cleafairy
-chmod u-w nincada0/cleafairy
+chmod o-r nincada0/clefairy
+chmod u-w nincada0/clefairy
 chmod 440 nincada0/graveler
 chmod a=---,u+r nincada0/altaria
 chmod 753 nincada0/salamence
@@ -107,7 +107,7 @@ chmod u-w ledian7
 #---------------------------------------------------------
 
 #4 задание------------------------------------------------
-(wc -m ledian7/panpour nincada0/cleafairy nincada0/graveler nincada0/altaria | sort) 2> /dev/null
+(wc -m ledian7/panpour nincada0/clefairy nincada0/graveler nincada0/altaria | sort) 2> /dev/null
 (ls -lRu | grep "r$" | tail -3) 2>&1
 #33333 (find ~ -name "*y" -exec cat -n '{}' ';' | sort -k2) 2> /dev/null
 (cat -n */*y */*/*/*y | sort -k2) 2> /dev/null
