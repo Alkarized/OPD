@@ -65,7 +65,7 @@ echo "Способности Overgrow Chlorophyll Rivalry" > scyther7/snivy
 #---------------------------------------------------------
 
 #2 задание------------------------------------------------
-chmod a-wx geodude3
+chmod a-w geodude3
 chmod go-r growlithe1
 chmod u-w huntail1
 chmod u-w,g-r,o=w ledian7
@@ -98,7 +98,7 @@ cp huntail1 scyther7/zoroark
 cat huntail1 > nincada0/gravelerhuntail
 cat scyther7/snivy scyther7/snivy > growlithe1_71
 cp -r ledian7 scyther7/igglybuff
-ln -s ledian7/scyther7 Copy_13
+ln -s scyther7 Copy_13
 ln huntail1 nincada0/altariahuntail
 ln -s huntail1 ledian7/panpourhuntail
 #Скопировал файлы
@@ -117,7 +117,8 @@ chmod u-w ledian7
 #33333 (find ~ -name "*y" -exec cat -n '{}' ';' | sort -k2) 2> /dev/null
 (cat -n */*y */*/*/*y | sort -k2) 2> /dev/null
 (ls -lR ledian7 | grep -v "total" | grep -v "ledian7" |sort -rk5) 2> /dev/null
-(ls -lR | grep -v "^\./" | grep -v "/s[a-z]*" | grep "s[a-s]" | head -n 3 | sort -k5) 2>&1
+(ls -lR | grep -v "^\./" | grep -v "/s[a-z]*" | grep "s[a-su-z]" | head -n 3 | sort -k5) 2>&1
+#(ls -ld s* */s* */*/*/s* | head -n 3 | sort -k5) 2>&1 
 (ls -lRur | head -n 6 | tail -4) 2> /dev/null
 #---------------------------------------------------------
 
