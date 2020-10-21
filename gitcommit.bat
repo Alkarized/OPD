@@ -1,3 +1,3 @@
 git add -A
-git commit -m "ss"
+git commit -m "completed"
 git push origin master
